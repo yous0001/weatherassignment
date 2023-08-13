@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <div class="logo-img w-25 me-2">
+          <img class="w-100" src="https://routeweather.netlify.app/images/logo@2x.png">
+        </div>
+        <div class="logotitle w-75">
+          <h2 class="fs-5">weather</h2>
+          <p class="fs-6">tagline goes here</p>
+        </div>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mb-2 mb-lg-0 gap-3 ms-auto">
+          <li class="nav-item ">
+            <a class="nav-link active px-3" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-3" href="#">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-3" href="#">Live cameras</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-3" href="#">photos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-3" href="#">contact</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="weather">
+    <div class="container">
+      <form>
+        <div class="form-find">
+          <input type="text" class="search-input form-control my-5 rounded-5" name="location" id="location"
+            placeholder="Find your location.." onkeyup="search()">
+          <button class="find-btn btn text-light rounded-5 px-4">Find</button>
+        </div>
+      </form>
+      <div class="row rounded-2" id="boxes">
+        <div class="col-lg-4 rounded-2 box1">
+          <div class="box1head rounded-2">
+            <p class="day">saturday</p>
+            <p class="date">12August</p>
+          </div>
+          <div class="box1body p-4">
+            <div class="location">cairo</div>
+            <div class="degree">
+              <span class="temp">32<sup>o</sup>c</span>
+              <span class="icon"><img src="https://cdn.weatherapi.com/weather/64x64/day/116.png" width="90"></span>
+            </div>
+            <div class="weatherstatus">sunny</div>
+            <div class="windstatus">
+              <span><img src="imgs/icon-umberella.png" alt=""> 20%</span>
+              <span><img src="imgs/icon-wind.png" alt=""> 18km/h</span>
+              <span><img src="imgs/icon-compass.png" alt=""> East</span>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-lg-4 box2">
+          <div class="box2head justify-content-center">
+            <p class="nextday">sunday</p>
+          </div>
+          <div class="box2body  p-5">
+            <div class="next-icon">
+              <img src="https://cdn.weatherapi.com/weather/64x64/day/116.png" width="48">
+            </div>
+            <div class="next-degree">
+
+              <div class="next-temp">
+                <p class="max">32<sup>o</sup>c</p>
+                <small class="min">20<sup>o</sup>c</small>
+              </div>
+
+            </div>
+            <div class="weatherstatus">sunny</div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 box3 rounded-2">
+          <div class="box3head justify-content-center">
+            <p class="nextday">monday</p>
+          </div>
+          <div class="box3body  p-5">
+            <div class="next-icon">
+              <img src="https://cdn.weatherapi.com/weather/64x64/day/116.png" width="48">
+            </div>
+            <div class="next-degree">
+
+              <div class="next-temp">
+                <p class="max">32<sup>o</sup>c</p>
+                <small class="min">20<sup>o</sup>c</small>
+              </div>
+
+            </div>
+            <div class="weatherstatus">sunny</div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="container my-5">
+      <div class="contact  mt-5 mb-3">
+          <div class="subscribe-form my-2">
+            <input type="text" class="form-control rounded-5 search-input" placeholder="Enter your email to subscribe...">
+            <button class="find-btn btn text-light rounded-5 px-4">subscribe</button>
+          </div>
+        <div class="contact-icons">
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-google-plus-g"></i>
+          <i class="fa-brands fa-pinterest"></i>
+        </div>
+      </div>
+      <p>Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+    </div>
+  </footer>
+
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
